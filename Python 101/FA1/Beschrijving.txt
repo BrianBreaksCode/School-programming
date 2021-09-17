@@ -1,0 +1,6 @@
+Stap 1: Start
+Stap 2: Vraag uurloon
+Stap 3: Vraag aantal gewerkte uren
+Stap 4: Bereken totale loon
+Stap 5: Print totale loon en aantal gewerkte uren
+Stap 6: Stop
