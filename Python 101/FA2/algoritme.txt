@@ -1,18 +1,20 @@
 Ontvang parameters leeftijd, weekendrit en afstandKM
 bereken met afstandKM de standaardprijs
 	als afstandKM negatief is
-		standaard is 0
+		standaardprijs is 0
 	als afstandKM gelijk of lager dan 50 is
 		standaardprijs is dan afstandKM vermenigvuldigd met 0.80
 	als de afstandKM groter dan 50 is
-		dan is de standaardprijs 15 euro + 60 cent per km bovenop de 50KM
+		dan is de standaardprijs 15 euro + 60 cent per km erbovenop
 
 bereken korting op de standaardprijs op basis van leeftijd en weekendtrip
-	als het geen weekendrit is en de leeftijd is lager dan 12 of hoger dan 64
-		dan krijg je 30% korting
-	als het wel weekendrit is en de leeftijd is lager dan 12 of hoger dan 64
-		dan krijg je 35% korting
-	als het wel weekend is en de leeftijd is tussen 12 en 64
-		dan krijg je 40% korting
-	als het geen weekend is en de leeftijd is tussen 12 en 64
-		dan betaal je de standaardprijs
+	als het wel weekend is
+		als de leeftijd is tussen 12 en 64 is
+			dan krijg je 40% korting
+		als de leeftijd niet tussen 12 en 64 is
+			dan krijg je 35% korting
+	als het geen weekend is
+		als de leeftijd is tussen 12 en 64 is
+			dan betaal je de standaardprijs
+		als de leeftijd niet tussen 12 en 64 is
+			dan krijg je 30% korting
